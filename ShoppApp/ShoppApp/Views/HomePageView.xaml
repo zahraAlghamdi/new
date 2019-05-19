@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppApp.HomePage"
+             Title="Home Page">
+    <ContentPage.Content>
+
+        <ListView x:Name="itemlist" ItemsSource="{Binding itemList}" HasUnevenRows="True" ItemSelected="Itemlist_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" Padding="15">
+                            <Image Source="{Binding image}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" WidthRequest="600" HeightRequest="300" Aspect="AspectFit"/>
+                            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Padding="10">
+                                <Label Text="{Binding title}" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large"/>
+                                <Label Text="{Binding price}" FontSize="Large" HorizontalOptions="End"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+        
+        
+
+    </ContentPage.Content>
+</ContentPage>

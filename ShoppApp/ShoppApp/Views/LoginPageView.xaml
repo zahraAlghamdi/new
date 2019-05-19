@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppApp.LoginPage"
+             Title="Login Page"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout Padding="20"  HorizontalOptions="Center" VerticalOptions="Center" >
+        <Image Source="logo.png" />
+            <Entry x:Name="email_label"  Keyboard="Email" Placeholder="Email" WidthRequest="400"/>
+            <Entry x:Name="password" Keyboard="Default" IsPassword="true" Placeholder="Password" WidthRequest="400" />
+        <Button Text="Login" Clicked="logIn"  />
+        </StackLayout>
+
+</ContentPage>

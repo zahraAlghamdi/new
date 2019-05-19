@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppApp.Views.DetailedPageView">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image x:Name="image" HorizontalOptions="CenterAndExpand" Aspect="AspectFill"/>
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Padding="10">
+                <Label x:Name="title" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="Large"/>
+                <Label x:Name="Price" FontSize="Large" HorizontalOptions="End"/>
+            </StackLayout>
+            <Label x:Name="description" Margin="10"/>
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="10, 10,10, 0">
+                <ImageButton Source="call.png" WidthRequest="90" HeightRequest="90" BackgroundColor="Transparent" Clicked="callButton_Clicked"></ImageButton>
+                <ImageButton Source="email.png"  WidthRequest="90" HeightRequest="90" BackgroundColor="Transparent" Clicked="emailButton_Clicked"></ImageButton>
+                <ImageButton Source="googlemaps.png"  WidthRequest="90" HeightRequest="90" BackgroundColor="Transparent" Clicked="mapButton_Clicked" ></ImageButton>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
